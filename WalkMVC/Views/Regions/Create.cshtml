@@ -1,0 +1,23 @@
+﻿@model WalkMVC.Models.Dto.RegionDto
+    
+<form asp-controller="Regions" asp-action="Upload" method="post">
+    <div class="mb-3">
+        <label for="Name">Name:</label>
+        <input asp-for="@Model.Name" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="Road">How to get there:</label>
+        <input asp-for="Road" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="Spots">Spots:</label>
+        <input asp-for="Spots" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="Links">Links to the images:</label>
+        <input asp-for="Links" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <button type="submit">Submit</button>
+    </div>
+</form>

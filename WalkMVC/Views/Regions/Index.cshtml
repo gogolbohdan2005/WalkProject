@@ -1,0 +1,10 @@
+﻿@model List<WalkMVC.Models.Region>
+
+@foreach (var m in Model)
+{
+    <h2>Name @m.Name: </h2>
+    <p>Road: @m.Road: </p>
+    <p>Mountains and waterfalls: @m.Spots</p>
+    <p>Links and the images: @m.Links</p>
+    <hr />
+}
